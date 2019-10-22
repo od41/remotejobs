@@ -1,0 +1,142 @@
+/* The styles for the remote Job Website Remix */
+
+body, * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    /* overflow-x: hidden; */
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    /* margin: 15px auto; */
+    height:100px;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    background: #7AD7F0;
+    box-shadow: 0px 4px 8px rgba(25, 25, 26, 0.2);
+    min-width: 427px;
+    /* width: 75%; */
+}
+
+.header button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    background: #467B8A;
+    color: #fff;
+    cursor: pointer;
+    align-self: center;
+    margin-right: 7%;
+}
+
+.header button:hover {
+    background: rgb(33, 58, 65);
+    box-shadow: 0px 6px 12px rgba(25, 25, 26, 0.2);
+    color: rgb(196, 196, 196);
+}
+
+.logo{
+    /* width: 600px; */
+    align-self: center;
+    margin-right: auto;
+    margin-left: 7%;
+}
+
+@media (min-width: 428px) {
+    .header button {
+        margin-right: 17%;
+    }
+
+    .logo {
+        margin-left: 17%;
+    }
+}
+
+
+/* Jog Listings */
+
+#app {
+    min-width: 427px;
+}
+
+.job {
+    padding: 1em 1.5em;
+    background: #DBF3FA;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(25, 25, 26, 0.1);
+}
+
+.job:hover {
+    background: #7AD7F0;
+    box-shadow: 0px 6px 12px rgba(25, 25, 26, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.job h2 {
+    font-size: 1rem;
+    color: rgba(5, 33, 41, .8);
+    margin: 15px 0;
+}
+
+.company-logo {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.job .bottom-row {
+    display: grid;
+    grid-template-columns: [company] 25% [description] 75%;
+    margin-bottom: 15px;
+}
+
+.job .bottom-row p{
+    color: #052129;
+    font-size: .9em;
+    line-height: 1.4;
+}
+
+.job .bottom-row span{
+    text-transform: uppercase;
+    font-size: .7em;
+    font-weight: 300;
+}
+
+.job .tags {
+    list-style-type: none;
+    display: flex;
+}
+
+.job .tags li {
+    padding: 4px 8px;
+    background: #fff;
+    border-radius: 20px;
+    margin-right: 5px;
+    text-transform: uppercase;
+    font-size: .7em;
+}
+
+@media (min-width: 428px) {
+    .job {
+        width: 65%;
+        max-width: 610px;
+    }
+
+    .job h2 {
+        font-size: 1.2rem;
+    }
+}
